@@ -1,0 +1,36 @@
+{
+  "name": "not-defterim",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "postbuild": "node -e \"require('node:fs').copyFileSync('dist/index.html','dist/200.html')\"",
+    "preview": "vite preview --port 4173 --strictPort",
+    "typecheck": "tsc -b --noEmit",
+    "icons": "node scripts/icons.mjs",
+    "keys": "node scripts/keys.mjs",
+    "deploy": "npm run build && npx --yes surge dist notdefterim.surge.sh"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.13",
+    "immer": "^11.2.9",
+    "lucide-react": "^0.545.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.2.6",
+    "@fontsource-variable/instrument-sans": "^5.2.6",
+    "@fontsource/jetbrains-mono": "^5.2.6",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.9"
+  }
+}

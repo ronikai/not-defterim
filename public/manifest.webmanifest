@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "Not Defterim",
+  "short_name": "Defterim",
+  "description": "Notlar, takvim, tablo, belge, akış şeması ve kod notu tek yerde. Çevrimdışı çalışır.",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#f4f4ef",
+  "theme_color": "#1f6b4f",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Yeni not", "short_name": "Not", "url": "/?action=note", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Takvim", "short_name": "Takvim", "url": "/?action=calendar", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Asistan", "short_name": "Asistan", "url": "/?action=ai", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
